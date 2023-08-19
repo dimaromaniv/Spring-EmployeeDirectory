@@ -1,4 +1,4 @@
-package io.zipcoder.persistenceapp.repositories;
+package io.zipcoder.persistenceapp.models;
 
 public interface Manager {
     public String acceptReport();
