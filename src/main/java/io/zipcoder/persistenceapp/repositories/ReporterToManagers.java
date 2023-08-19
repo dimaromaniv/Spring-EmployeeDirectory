@@ -1,4 +1,4 @@
-package io.zipcoder.persistenceapp;
+package io.zipcoder.persistenceapp.repositories;
 
 public interface ReporterToManagers {
     public String makeReport();

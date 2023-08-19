@@ -1,6 +1,10 @@
-package io.zipcoder.persistenceapp;
+package io.zipcoder.persistenceapp.models;
 
-public class Employee {
+import io.zipcoder.persistenceapp.repositories.Manager;
+import io.zipcoder.persistenceapp.repositories.ReporterToManagers;
+import io.zipcoder.persistenceapp.repositories.middleManagers;
+
+public class Employee implements ReporterToManagers, middleManagers, Manager {
 
    private Integer idNumber;
     private String firstName;
@@ -34,4 +38,13 @@ public class Employee {
     }
 
 
+    @Override
+    public String makeReport() {
+        return null;
+    }
+
+    @Override
+    public String acceptReport() {
+        return null;
+    }
 }
